@@ -1,0 +1,2 @@
+[host]
+ip of the targets
