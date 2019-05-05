@@ -2,7 +2,7 @@
   - name: Playbook for building a relative machine to run docker builds
     hosts: '{{ invent }}'
     roles:
-      - adduser
-      - installdocker
-      - installmaven
-      - startdocerservice
+      - user
+      - dockerinstall
+      - maveninstall
+      - startdservice
