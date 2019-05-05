@@ -1,0 +1,8 @@
+---
+  - name: Create a admin user "{{ user }}" to install docker in hosts
+    user: 
+      name: {{ user }}
+      password: {{ pass | password_hash('sha512') }}
+      generate_ssh_key: yes
+      groups: admin append=yes
+    when:  assigned_role  == "yes"
