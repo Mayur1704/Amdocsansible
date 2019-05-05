@@ -1,0 +1,6 @@
+---
+  - name: Docker services to be started and status check
+    service:
+      name: docker
+      state: started
+      enabled: yes
